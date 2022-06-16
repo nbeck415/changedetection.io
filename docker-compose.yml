@@ -48,6 +48,8 @@ services:
       ports:
         - 5000:5000
       restart: unless-stopped
+      labels:
+        shipyard.route: '/'
 
      # Used for fetching pages via WebDriver+Chrome where you need Javascript support.
      # Now working on arm64 (needs testing on rPi - tested on Oracle ARM instance)
