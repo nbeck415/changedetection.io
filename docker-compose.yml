@@ -1,7 +1,8 @@
 version: '2'
 services:
     changedetection:
-      image: ghcr.io/dgtlmoon/changedetection.io
+      # image: ghcr.io/dgtlmoon/changedetection.io
+      build: .
       container_name: changedetection
       hostname: changedetection
       volumes:
